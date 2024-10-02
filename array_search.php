@@ -3,7 +3,6 @@
 //Crie uma array.
 $frutas = array("Maça", "Banana" , "Laranja");
 
-
 //Crie um valor;
 $valor = "Maça";
 

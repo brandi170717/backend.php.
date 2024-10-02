@@ -1,5 +1,6 @@
 <?php
 
+// Atividade 02 
 $corEscolhida = "vermelho";
 
 switch ($corEscolhida) {
