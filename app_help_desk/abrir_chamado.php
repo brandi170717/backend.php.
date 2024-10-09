@@ -1,8 +1,12 @@
+<?php
+
+require_once ("login.php");
+
+?>
 <html>
   <head>
     <meta charset="utf-8" />
     <title>App Help Desk</title>
-
     <link rel="stylesheet" type="text/css" href="bootstrap.css">
     <link rel="stylesheet" type="text/css" href="styles.css">
 
@@ -15,6 +19,7 @@
       <a class="navbar-brand" href="#">
         <img src="logo.png" width="30" height="30" class="d-inline-block align-top" alt="">
         App Help Desk
+        <a style="background-color:red; border-color:red; color:white" href="index.php">Sair</a>
       </a>
     </nav>
 
@@ -29,13 +34,13 @@
             <div class="card-body">
               <div class="row">
                 <div class="col">
-                  
+                 
                   <form>
                     <div class="form-group">
                       <label>Título</label>
                       <input type="text" class="form-control" placeholder="Título">
                     </div>
-                    
+                   
                     <div class="form-group">
                       <label>Categoria</label>
                       <select class="form-control">
@@ -46,7 +51,7 @@
                         <option>Rede</option>
                       </select>
                     </div>
-                    
+                   
                     <div class="form-group">
                       <label>Descrição</label>
                       <textarea class="form-control" rows="3"></textarea>
@@ -54,11 +59,11 @@
 
                     <div class="row mt-5">
                       <div class="col-6">
-                        <button class="btn btn-lg btn-warning btn-block" type="submit">Voltar</button>
+                      <a class="btn btn-lg btn-warning btn-block" href="painel.php">Voltar</a>
                       </div>
 
                       <div class="col-6">
-                        <button class="btn btn-lg btn-info btn-block" type="submit">Abrir</button>
+                        <a class="btn btn-lg btn-info btn-block" href="painel.php">Abrir</a><br></br>
                       </div>
                     </div>
                   </form>

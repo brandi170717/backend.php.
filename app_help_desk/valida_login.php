@@ -1,43 +1,37 @@
 <?php
-
-//  echo "<pre>";
-//  print_r($_POST);
-//  echo "</pre>";
-//  echo "<hr>";
-
-//  echo "E-mail: ";
-//  echo $_POST['email'];
-//  echo '<br>';
-// echo $_POST['senha'];
-
-// session_star();
-
+session_start();
 $usuario_autenticado = false;
-
+?>
+<?php
+//cria uma variavel que armasena os valores dos email e senhas
 $usuario_cadastrado = [
-    ['email' => 'admin@senai.br',
-    'senha' => '12345' 
-    ] ,
-    ['email' => 'supot@senai.br',
-    'senha' => '54321' 
-    ] ,
-    ['email' => 'aluno@senai.br',
-    'senha' => '67890' 
-    ] , 
+    ['email'=> 'admin@senai.br',
+    'senha'=> 12345],
+    ['email'=> 'aluno@senai.br',
+    'senha'=> 'abcde'],
+    ['email'=> 'suporte@senai.br',
+    'senha'=> '1a2b3c']
 ];
-
-foreach ($usuario_cadastrado as $user){
-    if ($user['email'] == $_POST['email'] && $user['senha'] == $_POST['senha']){
+// cria uma foreach que aprevia a variavel $usuario_cadastrado para $user
+foreach($usuario_cadastrado as $user){
+    //ve se a informação do $_POST é igual a um dos email ou senha cadastrados
+    if($user['email'] == $_POST['email'] && $user['senha'] == $_POST['senha']){
         $usuario_autenticado = true;
     }
-}
+       
 
-if ($usuario_autenticado){
-    $_SESSION['autenticado'] ='SIM';    
-    echo "Usuário autenticado com sucesso";
-}else{
-    $_SESSION['autenticado'] ='NÃO';   
-    // echo"Usuário ou senha incorreto";
-    header ('Location: index.php?login=erro');
+
 }
+//se usuario = a verdadeiro irá validae
+if($usuario_autenticado){
+    $_SESSION['autenticado'] = 'SIM';
+    header ('location: painel.php');
+    }
+else{
+    $_SESSION['autenticado'] = 'NÃO';
+    header ('location: index.php?login=erro');
+}
+   
+
+
 ?>
