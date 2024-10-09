@@ -22,10 +22,10 @@
      margin: 0 auto;
    }
 
-.botao_red{
+.botao-sair{
   display: inline-block;
   padding: 10px 20px;
-  background: red;
+  background-color: red;
   color: rgb(255, 255, 255);
   text-decoration: nome;
   border-radius: 5px;
@@ -34,7 +34,7 @@
 }
 
 .botao-sair:hover{
-  background: rgb(163, 4, 4);
+  background-color: rgb(163, 4, 4);
   color:rgb(255, 255, 255);
   transform: scale(1.1);
 }
