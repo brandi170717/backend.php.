@@ -1,7 +1,7 @@
 <html>
   <head>
     <meta charset="utf-8" />
-    <title>App Help Desk</title>
+    <title>Potterhead</title>
 
     <link rel="stylesheet" type="text/css" href="bootstrap.css">
     <link rel="stylesheet" href="style.css">
@@ -15,8 +15,8 @@
 
     <nav class="navbar navbar-dark bg-dark">
       <a class="navbar-brand" href="#">
-        <img src="logo.png" width="30" height="30" class="d-inline-block align-top" alt="">
-        App Help Desk
+        <img src="./harry potter logo.png" width="30" height="30" class="d-inline-block align-top" alt="">
+        Potterhead
       </a>
     </nav>
 

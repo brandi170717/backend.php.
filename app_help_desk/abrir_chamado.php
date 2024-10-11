@@ -6,7 +6,7 @@ require_once ("login.php");
 <html>
   <head>
     <meta charset="utf-8" />
-    <title>App Help Desk</title>
+    <title>Potterhead</title>
     <link rel="stylesheet" type="text/css" href="bootstrap.css">
     <link rel="stylesheet" type="text/css" href="styles.css">
 
@@ -17,8 +17,8 @@ require_once ("login.php");
 
     <nav class="navbar navbar-dark bg-dark">
       <a class="navbar-brand" href="#">
-        <img src="logo.png" width="30" height="30" class="d-inline-block align-top" alt="">
-        App Help Desk
+        <img src="./harry potter logo.png" width="30" height="30" class="d-inline-block align-top" alt="">
+        Potterhead
       </a>
       <ul class="navbar-nav">
           <li class="nav-item">
@@ -33,7 +33,7 @@ require_once ("login.php");
         <div class="card-abrir-chamado">
           <div class="card">
             <div class="card-header">
-              Abertura de chamado
+              Criticas
             </div>
             <div class="card-body">
               <div class="row">
@@ -41,18 +41,21 @@ require_once ("login.php");
                  
                   <form>
                     <div class="form-group">
-                      <label>Título</label>
-                      <input type="text" class="form-control" placeholder="Título">
+                      <label>Personagem</label>
+                      <input type="text" class="form-control" placeholder="Personagem">
                     </div>
                    
                     <div class="form-group">
-                      <label>Categoria</label>
+                      <label>Livro/Filme</label>
                       <select class="form-control">
-                        <option>Criação Usuário</option>
-                        <option>Impressora</option>
-                        <option>Hardware</option>
-                        <option>Software</option>
-                        <option>Rede</option>
+                        <option>Saga</option>
+                        <option>Harry Potter e a pedra filosofal</option>
+                        <option>Harry Potter e a camara secreta</option>
+                        <option>Harry Potter e o prisioneiro de askaban</option>
+                        <option>Harry Potter e o calise de fogo</option>
+                        <option>Harry Potter e a ordem da fênix</option>
+                        <option>Harry Potter e o principe mestiço</option>
+                        <option>Harry Potter e as reliquias da morte</option>
                       </select>
                     </div>
                    
@@ -67,7 +70,7 @@ require_once ("login.php");
                       </div>
 
                       <div class="col-6">
-                        <a class="btn btn-lg btn-info btn-block" href="painel.php">Abrir</a><br></br>
+                        <a class="btn btn-lg btn-info btn-block" href="painel.php">Avançar</a><br></br>
                       </div>
                     </div>
                   </form>

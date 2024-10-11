@@ -6,7 +6,7 @@ require_once ("login.php");
 <html>
   <head>
     <meta charset="utf-8" />
-    <title>App Help Desk</title>
+    <title>Potterhead</title>
 
     <link rel="stylesheet" type="text/css" href="bootstrap.css">
     <link rel="stylesheet" type="text/css" href="styles.css">
@@ -18,8 +18,8 @@ require_once ("login.php");
 
     <nav class="navbar navbar-dark bg-dark">
       <a class="navbar-brand" href="#">
-        <img src="logo.png" width="30" height="30" class="d-inline-block align-top" alt="">
-        App Help Desk
+        <img src="./harry potter logo.png" width="30" height="30" class="d-inline-block align-top" alt="">
+        Potterhead
       </a>
       <ul class="navbar-nav">
           <li class="nav-item">
@@ -34,25 +34,43 @@ require_once ("login.php");
         <div class="card-consultar-chamado">
           <div class="card">
             <div class="card-header">
-              Consulta de chamado
+              Consulta sua casa
             </div>
            
             <div class="card-body">
              
               <div class="card mb-3 bg-light">
                 <div class="card-body">
-                  <h5 class="card-title">Título do chamado...</h5>
-                  <h6 class="card-subtitle mb-2 text-muted">Categoria</h6>
-                  <p class="card-text">Descrição do chamado...</p>
+                  <h5 class="card-title">Grifinoria</h5>
+                  <h6 class="card-subtitle mb-2 text-muted">Casa</h6>
+                  <p class="card-text">Descrição da casa...</p>
 
                 </div>
               </div>
 
               <div class="card mb-3 bg-light">
                 <div class="card-body">
-                  <h5 class="card-title">Título do chamado...</h5>
-                  <h6 class="card-subtitle mb-2 text-muted">Categoria</h6>
-                  <p class="card-text">Descrição do chamado...</p>
+                  <h5 class="card-title">Lufa-Lufa</h5>
+                  <h6 class="card-subtitle mb-2 text-muted">Casa</h6>
+                  <p class="card-text">Descrição da casa...</p>
+
+                </div>
+              </div>
+
+              <div class="card mb-3 bg-light">
+                <div class="card-body">
+                  <h5 class="card-title">Corvinal</h5>
+                  <h6 class="card-subtitle mb-2 text-muted">Casa</h6>
+                  <p class="card-text">Descrição da casa...</p>
+
+                </div>
+              </div>
+
+              <div class="card mb-3 bg-light">
+                <div class="card-body">
+                  <h5 class="card-title">Sonserina</h5>
+                  <h6 class="card-subtitle mb-2 text-muted">Casa</h6>
+                  <p class="card-text">Descrição da casa...</p>
 
                 </div>
               </div>
