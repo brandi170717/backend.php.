@@ -39,15 +39,15 @@ require_once ("login.php");
               <div class="row">
                 <div class="col">
                  
-                  <form>
+                  <form action="registra_chamado.php" method="POST">
                     <div class="form-group">
                       <label>Personagem</label>
-                      <input type="text" class="form-control" placeholder="Personagem">
+                      <input name="Personagem" type="text" class="form-control" placeholder="Personagem">
                     </div>
                    
                     <div class="form-group">
-                      <label>Livro/Filme</label>
-                      <select class="form-control">
+                      <label>Livro_Filme</label>
+                      <select name="Livro_Filme" class="form-control">
                         <option>Saga</option>
                         <option>Harry Potter e a pedra filosofal</option>
                         <option>Harry Potter e a camara secreta</option>
@@ -61,7 +61,7 @@ require_once ("login.php");
                    
                     <div class="form-group">
                       <label>Descrição</label>
-                      <textarea class="form-control" rows="3"></textarea>
+                      <textarea name="Descricao" class="form-control" rows="3"></textarea>
                     </div>
 
                     <div class="row mt-5">
@@ -70,7 +70,7 @@ require_once ("login.php");
                       </div>
 
                       <div class="col-6">
-                        <a class="btn btn-lg btn-info btn-block" href="painel.php">Avançar</a><br></br>
+                        <button class="btn btn-lg btn-info btn-block"type="submit">Abrir </button>
                       </div>
                     </div>
                   </form>
