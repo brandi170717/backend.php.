@@ -7,17 +7,19 @@ echo "<hr>";
 
 $Personagem = $_POST['Personagem'];
 
-$Fivro_Filme = $_POST['Livro_Filme'];
+$Livro_Filme = $_POST['Livro_Filme'];
 
 $Descricao = $_POST['Descricao'];
 
-$texto = $Personagem. '#' .$Livro_Filme. '#' .$Descricao ;
+$texto = $Personagem. ' # ' .$Livro_Filme. ' # ' .$Descricao.PHP_EOL;
 
 echo $texto;
 
 $arquivo = fopen('registro.txt' , 'a');
 
-fwrite($arquivo, '$texto');
+fwrite($arquivo, $texto);
 
 fclose($arquivo);
+
+header('location:painel.php');
 ?>

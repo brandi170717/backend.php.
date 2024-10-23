@@ -1,8 +1,18 @@
-<?php
+<?php require_once ("login.php"); ?>
 
-require_once ("login.php");
+<?php 
+$arquivo = fopen('registro.txt' , 'r');
 
+while(!feof($arquivo)) {
+  $registro = fgets($arquivo);
+  $chamados[] = $registro;
+}
+
+echo '<pre>';
+print_r($chamados);
+echo '</pre>';
 ?>
+
 <html>
   <head>
     <meta charset="utf-8" />
@@ -38,37 +48,33 @@ require_once ("login.php");
             </div>
            
             <div class="card-body">
+
+            <?php
+
+              foreach($chamados as $chamado){
+
+              $chamado_dados = explode ('#' ,$chamado);
+              
+              echo '<pre>';
+              print_r($chamado_dados);
+              echo '</pre>';
+
+            ?>
              
               <div class="card mb-3 bg-light">
                 <div class="card-body">
-                  <h5 class="card-title">Grifinoria</h5>
+                  <h5 class="card-title"> <?php echo $chamado_dados[0]; ?> </h5>
                   <h6 class="card-subtitle mb-2 text-muted">Casa</h6>
                   <p class="card-text">Descrição da casa...</p>
 
                 </div>
-              </div>
+              </div> 
+
+              <?php } ?>
 
               <div class="card mb-3 bg-light">
                 <div class="card-body">
-                  <h5 class="card-title">Lufa-Lufa</h5>
-                  <h6 class="card-subtitle mb-2 text-muted">Casa</h6>
-                  <p class="card-text">Descrição da casa...</p>
-
-                </div>
-              </div>
-
-              <div class="card mb-3 bg-light">
-                <div class="card-body">
-                  <h5 class="card-title">Corvinal</h5>
-                  <h6 class="card-subtitle mb-2 text-muted">Casa</h6>
-                  <p class="card-text">Descrição da casa...</p>
-
-                </div>
-              </div>
-
-              <div class="card mb-3 bg-light">
-                <div class="card-body">
-                  <h5 class="card-title">Sonserina</h5>
+                  <h5 class="card-title">Personagens</h5>
                   <h6 class="card-subtitle mb-2 text-muted">Casa</h6>
                   <p class="card-text">Descrição da casa...</p>
 
