@@ -8,10 +8,10 @@ while(!feof($arquivo)) {
   $chamados[] = $registro;
 }
 
-echo '<pre>';
-print_r($chamados);
-echo '</pre>';
-?>
+// echo '<pre>';
+// print_r($chamados);
+// echo '</pre>';
+// ?>
 
 <html>
   <head>
@@ -55,9 +55,9 @@ echo '</pre>';
 
               $chamado_dados = explode ('#' ,$chamado);
               
-              echo '<pre>';
-              print_r($chamado_dados);
-              echo '</pre>';
+              // echo '<pre>';
+              // print_r($chamado_dados);
+              // echo '</pre>';
 
             ?>
              
