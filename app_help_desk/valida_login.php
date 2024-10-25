@@ -18,8 +18,6 @@ foreach($usuario_cadastrado as $user){
     if($user['email'] == $_POST['email'] && $user['senha'] == $_POST['senha']){
         $usuario_autenticado = true;
     }
-       
-
 
 }
 //se usuario = a verdadeiro irá validae
@@ -28,8 +26,8 @@ if($usuario_autenticado){
     header ('location: painel.php');
     }
 else{
-    $_SESSION['autenticado'] = 'NÃO';
-    header ('location: index.php?login=erro');
+    $_SESSION['autenticado'] = 'NAO';
+    header ('location: entrar.php?login=erro');
 }
    
 
