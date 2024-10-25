@@ -1,7 +1,7 @@
 <?php require_once ("login.php"); ?>
 
 <?php 
-$arquivo = fopen('registro.txt' , 'r');
+$arquivo = fopen('../../app_help_desk/registro.txt' , 'r');
 
 while(!feof($arquivo)) {
   $registro = fgets($arquivo);

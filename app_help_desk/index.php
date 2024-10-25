@@ -1,62 +1,53 @@
-<html>
-  <head>
-    <meta charset="utf-8" />
-    <title>Potterhead</title>
+<!DOCTYPE html>
+<html lang="pt-br">
 
-    <link rel="stylesheet" type="text/css" href="bootstrap.css">
-    <link rel="stylesheet" href="style.css">
+<head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <link rel="stylesheet" type="text/css" href="bootstrap.css">
+   <link rel="stylesheet" href="style.css">
 
-    <link rel="stylesheet" type="text/css" href="styles.css">
+   <title>Emanuela</title>
+</head>
 
-    </style>
-  </head>
-
-  <body>
-
-    <nav class="navbar navbar-dark bg-dark">
+<body>
+   <nav class="navbar navbar-dark bg-dark">
       <a class="navbar-brand" href="#">
-        <img src="./harry potter logo.png" width="30" height="30" class="d-inline-block align-top" alt="">
-        Potterhead
+         <img src="harry potter logo.png" width="50" height="50" class="d-inline-block align-top" alt="">
+         Entre páginas
       </a>
-    </nav>
+      <ul class="navbar-nav">
+         <li class="nav-item">
+            <button onclick="location.href='entrar.php'" class="botao-sair" type="button"> Entrar </button>
+         </li>
+      </ul>
+   </nav>
+   
+   <header>
+      <h1>Seja bem vindo ao nosso site</h1>
+      <h3></h3> <br>
+   </header>
+   <div>
 
-    <div class="container">    
-      <div class="row">
+      <center>
+         <h2>Fale conosco</h2>
+      </center>
+      <form action=“Nome”>
+         <label for=“Nome”> Nome:</label> <br> <br>
+         <input type=“nome” id='nome' placeholder="Digite seu nome" required>
+      </form> <br>
 
-        <div class="card-login">
-          <div class="card">
-            <div class="card-header">
-              Login
-            </div>
-            <div class="card-body">
-              <form action="valida_login.php" method="post">
-                <div class="form-group">
-                  <input name= 'email' type="email" class="form-control" placeholder="E-mail" require>
-                </div>
-                <div class="form-group">
-                  <input name='senha' type="senha" class="form-control" placeholder="Senha" require>
-                </div>
+      <form action=“email”>
+         <label for=“email”>Email:</label> <br> <br>
+         <input type=“email” id='Email' placeholder="Digite seu email" required>
+      </form> <br>
 
-                <?php if(isset($_GET['login']) && $_GET['login'] == 'erro'){?>
+      <p>Digite uma mensagem para nós:</p>
+      <textarea name="mensagem" id="mensagem" placeholder="Deixe uma mensagem" rows="10" cols="30"></textarea>
 
-                <div class="text-danger">
-                  Usuário ou senha inválido(s)
-                </div>
+      <center><button>Enviar</button></center>
+   </div>
+   <img class="harry" src="harry_potter_capa_widelg.jpg" width="860px">
+</body>
 
-                <?php } ?>
-                <?php if(isset($_GET['login']) && $_GET['login'] == 'erro2'){?>
-
-                <div class="text-danger">
-                  Faça login antes de acessar as páginas
-                </div>
-
-                <?php } ?>
-               
-                <button class="btn btn-lg btn-info btn-block" type="submit">Entrar</button>
-              </form>
-            </div>
-          </div>
-        </div>
-    </div>
-  </body>
 </html>

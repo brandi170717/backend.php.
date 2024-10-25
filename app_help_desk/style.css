@@ -1,0 +1,128 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Pacifico&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Pacifico&family=Sedan:ital@0;1&display=swap');
+
+:root {
+    --fundo: #693232;
+    --header: #832323;
+    --dark: #09103b;
+    --secondfont: #000000dc;
+}
+
+body {
+    background-color: #330000dc;
+    height: 100px;
+}
+
+header {
+    text-align: center;
+    background-color: var(--header);
+    opacity: 0.66;
+    animation: cores 5s ease-in-out 1;
+    
+}
+
+h1 {
+    color: var(--dark);
+    justify-content: center;
+    font-family: "Pacifico", cursive;
+    font-weight: 400;
+    font-style: normal;
+}
+
+h2{ color: var(--dark);
+    font-family: "Pacifico", cursive;
+    font-weight: 400;
+    font-style: normal;
+}
+
+h3 {
+    color: var(--secondfont);
+    font-family: "Sedan", serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+p {
+    color: white;}
+
+input{
+    color: rgb(1, 2, 3);
+    }
+
+form {
+    color: white;}
+
+div {
+    background-color: var(--header);
+    opacity: 0.7;
+    display: block;
+    margin: 60px;
+    width: 370px;
+    flex-direction: column; 
+    padding-left: 10px;
+}
+
+.harry{
+    position: absolute;
+    top: 220px;
+    bottom: 30px;
+    right: 30px;
+    border-radius: 180px;
+    opacity: 0.8;
+}
+
+button{
+    background-color: var(--dark);
+    color:rgb(255, 255, 255) ;
+    width: 150px;
+    height: 40px;
+}
+
+button:hover{
+    background-color: rgb(165, 63, 63) ;
+    color: black; }
+
+button:active{
+    background-color: rgb(100, 124, 230);
+color: black; }
+
+input:focus{
+    background-color: rgb(110, 163, 212);
+    border: 3px solid rgb(22, 10, 90);
+}
+
+#email:valid{
+color: rgb(47, 29, 209)
+}
+
+#email:invalid{
+    color: rgb(230, 15, 15);
+    }
+
+@keyframes cores {
+    from {
+        background-color: var(--header);
+    }
+    
+    to {
+        background-color: rgb(128, 34, 34);
+    }
+    }
+.botao-entrar{
+        display: flex;
+        padding: 10px 20px;
+        left: 200px;
+        background: rgb(75, 77, 219);
+        color: white;
+        text-decoration: none;
+        border-radius: 5px;
+        font-weight: bold;
+        transition: all 0.5s;
+      }
+      
+.botao-entrar:hover{
+        background: rgb(30, 5, 121);
+        color: white;
+        transform: scale(1,1);
+      }
